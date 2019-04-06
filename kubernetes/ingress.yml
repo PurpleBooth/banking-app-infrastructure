@@ -4,16 +4,17 @@ metadata:
   name: banking-ingress
   annotations:
     kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/frontend-entry-points: http,https
 spec:
   rules:
-  - host: banking-rabbit.apps.onse-training.co.uk
+  - host: banking-rabbit.apps.billiethompson.co.uk
     http:
       paths:
       - path: /
         backend:
           serviceName: message-bus
           servicePort: management
-  - host: banking-demo.apps.onse-training.co.uk
+  - host: banking-demo.apps.billiethompson.co.uk
     http:
       paths:
         - path: /cashier/

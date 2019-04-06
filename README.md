@@ -1,7 +1,4 @@
-# ONS Engineer  - Banking App Infrastructure
-
-This repository is part of the microservice training for the ONS Software
-Engineering Session.
+# Banking App Infrastructure
 
 ## Contents
 
@@ -15,9 +12,9 @@ used by the microservices. This includes:
 
 ### 1. Update the hosts in the [ingress.yml](./kubernetes/ingress.yml)
 
-For the app, use `GITHUSER-banking-app.apps.onse-training.co.uk`.
+For the app, use `banking-app.apps.example.com`.
 
-For the RabbitMQ dashboard use `GITHUSER-banking-rabbit.apps.onse-training.co.uk`.
+For the RabbitMQ dashboard use `banking-rabbit.apps.example.com`.
 
 ### 2. Deploy
 
